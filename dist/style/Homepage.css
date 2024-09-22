@@ -1,0 +1,100 @@
+#shell {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+  height:100vh;
+
+}
+#mainHome {
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    max-width:2500px;
+  }
+  
+  #homeTitle {
+    font-family: copper;
+    color:rgb(160, 110, 44);
+    text-shadow: 2px 1px 1px rgb(0, 0, 0);
+  }
+  #imgBanner {
+    display:flex;
+    flex-direction: row;
+  }
+  
+  #intro {
+    font-size: 30px;
+    font-family: copper;
+    color:rgb(159, 106, 9);
+    
+    width:60vw;
+  }
+  #contactDiv {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3px;
+  }
+  #contactDiv h2{
+    background-color: aliceblue;
+    margin:0px;
+    border-radius: 5px;
+    border-bottom-style: solid;
+  }
+  #contactInfo {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    border-radius: 5px;
+    
+    background-color: aliceblue;
+  }
+  h3 span {
+    font-weight: normal;
+  }
+
+  #bannerImg {
+    width:500px;
+  }
+  #mainImg {
+    width:45vw; 
+    aspect-Ratio:21/6;
+    border-radius:5px;
+  }
+  #leftBird{
+    width:15vw; 
+    transform:scaleX(-1);
+  }
+  #rightBird{
+    width:15vw; 
+    
+  }
+
+  @media only screen and (max-aspect-ratio:.8) and (max-width:2200px){
+
+    #homeTitle {
+      font-size:6.5vw;
+    }
+    #bannerImg {
+      width:90vw;
+    }
+    #mainImg {
+      width:60vw; 
+      aspect-Ratio:16/9;
+      border-radius:5px;
+    }
+    #intro {
+      font-size:6vw;
+    }
+    #leftBird{
+      width:20vw; 
+      transform:scaleX(-1);
+    }
+    #rightBird{
+      width:20vw; 
+      
+    }
+
+  }

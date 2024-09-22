@@ -1,0 +1,11 @@
+
+
+@font-face {
+  font-family: copper;
+  src: url("src/assets/font/misc/Nesto-Copper42-2765.woff");
+  
+}
+body {
+  margin:0px;
+  background-color: rgb(203, 255, 247);
+}
