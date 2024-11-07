@@ -87,7 +87,8 @@ app.post("/add2Cart", async (req,res,next) => {
 },);
 
 app.get("/getReviews", async (req,res,next) => {
-  res.sendFile(path.join(__dirname, './dist/index.html'));
+  let response = await Review.find().exec();
+  res.json(response);
 },)
 
 app.post("/postReview", async (req,res,next) => {
