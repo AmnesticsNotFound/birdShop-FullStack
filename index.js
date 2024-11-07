@@ -86,6 +86,10 @@ app.post("/add2Cart", async (req,res,next) => {
     
 },);
 
+app.get("/testimonials", async (req,res,next) => {
+  res.sendFile(path.join(__dirname, './dist/index.html'));
+},)
+
 app.get("/getReviews", async (req,res,next) => {
   let response = await Review.find().exec();
   res.json(response);
