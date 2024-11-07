@@ -7,7 +7,8 @@ const dotenv = require('dotenv');
 const axios = require('axios');
 const path = require("path");
 const Parrot = require('./models/parrot');
-
+const Review = require('./models/review');
+const { ObjectId } = require('mongodb');
 const app = express(),
             bodyParser = require("body-parser");
 dotenv.config();
@@ -63,7 +64,7 @@ app.get('/', (req,res) => {
 app.get("/getCatalog", async (req,res,next) => {
     let response = await Parrot.find().exec();
     res.json(response);
-},)
+},);
 
 app.post("/add2Cart", async (req,res,next) => {
     let entry = new Parrot({
@@ -83,4 +84,21 @@ app.post("/add2Cart", async (req,res,next) => {
         res.json(error)
     }
     
+},);
+
+app.get("/getReviews", async (req,res,next) => {
+  res.sendFile(path.join(__dirname, './dist/index.html'));
+},)
+
+app.post("/postReview", async (req,res,next) => {
+  console.log(req.body);
+  let review = new Review(
+    {
+      _id:new ObjectId(),
+      name:req.body.name,
+      description: req.body.description,
+      rating:req.body.rating,
+    })
+  await review.save();
+  res.json("Review Submitted");
 },)

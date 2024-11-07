@@ -1,0 +1,18 @@
+#faqBody {
+    width:80vw;
+    margin-left:3vw;
+    flex-direction: column;
+    height:fit-content;
+    color:rgb(0, 0, 0);
+}
+
+#hard2read {
+    
+}
+#email, #phone {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    gap:10px;
+}
+

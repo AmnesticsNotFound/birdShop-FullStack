@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   
-  height:100vh;
+  height:91.1vh;
 
 }
 #mainHome {
@@ -25,17 +25,26 @@
   }
   
   #intro {
-    font-size: 30px;
+    font-size: 161%;
     font-family: copper;
     color:rgb(159, 106, 9);
-    
-    width:60vw;
+    background-color:rgb(255, 255, 255);
+    border-style:solid;
+    padding:1%;
+    border-width:5px;
+    border-radius:6px;
+    width:100vw;
+    max-height:500px;
+    max-width:1201px;
+    line-height:1.15;
   }
   #contactDiv {
     display:flex;
     flex-direction: column;
     align-items: center;
     padding:3px;
+    width:fit-content;
+   
   }
   #contactDiv h2{
     background-color: aliceblue;
@@ -59,9 +68,12 @@
     width:500px;
   }
   #mainImg {
-    width:45vw; 
+    width:45vw;
+    max-width:1000px;
     aspect-Ratio:21/6;
     border-radius:5px;
+    border-style:solid;
+    border-width:5px;
   }
   #leftBird{
     width:15vw; 
@@ -73,7 +85,9 @@
   }
 
   @media only screen and (max-aspect-ratio:.8) and (max-width:2200px){
-
+    #shell {
+      height:max-content;
+    }
     #homeTitle {
       font-size:6.5vw;
     }
@@ -87,6 +101,8 @@
     }
     #intro {
       font-size:6vw;
+      width:90vw;
+      max-height:max-content;
     }
     #leftBird{
       width:20vw; 
@@ -97,4 +113,11 @@
       
     }
 
+    #contactDiv {
+      font-size: 100%;
+    }
+
+    #contactInfo {
+      flex-direction: column;
+    }
   }

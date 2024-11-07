@@ -6,6 +6,22 @@
   
 }
 body {
+  width:99.2vw;
+  height:100vh;
   margin:0px;
-  background-color: rgb(203, 255, 247);
+  background-color:rgb(255, 255, 255);
+  
+  
+}
+#root {
+  width:99.2vw;
+}
+
+@media only screen and (max-aspect-ratio:.8) and (max-width:2200px){
+  body {
+  
+    background-image: none;
+    background-color:rgb(255, 255, 255);
+  }
+
 }

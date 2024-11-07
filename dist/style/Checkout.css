@@ -88,10 +88,11 @@
     align-items: center;
     
 }
-button {
+#column3 button {
     background-color: rgb(177, 240, 82);
     border-radius: 6px;
     height:40px;
     font-size:1vw;
+    cursor: pointer;
    
 }

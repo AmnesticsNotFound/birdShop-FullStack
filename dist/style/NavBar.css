@@ -22,21 +22,26 @@ a:link {
     justify-content:space-between;
     height:8vh;
     min-height:100px;
-    background-color: rgb(252, 228, 175);
-    
-    box-shadow: 0 30px 40px rgba(0,0,0,.1);
-    
+    background-color: rgb(0, 17, 85);
+    margin:0px;
+    width:100vw;
+   
     
 }
 
 
   #logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #ffffff);
   }
   #logo.react:hover {
     filter: drop-shadow(0 0 2em #61dafbaa);
   }
   
+  #leftSection {
+    display:flex;
+    align-items: center;
+    gap:1vw;
+  }
   @keyframes logo-spin {
     from {
       transform: rotate(0deg);
@@ -73,7 +78,7 @@ a:link {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       border-radius:6px;
       padding:15px;
-      background-color:rgba(193, 250, 255, 0.638);
+      background-color:rgb(255, 255, 255);
   }
   
 #logo {
@@ -87,6 +92,7 @@ a:link {
 .cart {
     display:flex;
     align-items:center;
+    margin-right:1vw;
 }
 
 #cartImg {
@@ -109,10 +115,10 @@ a:link {
 
 @media only screen and (max-aspect-ratio:.8) and (max-width:2200px){
   .navBar {
-    background-color: rgb(255, 237, 135);
+    background-color: rgb(0, 17, 85);
     height:10vh;
     width:100vw;
-    
+    overflow-x:scroll;
     
   }
 }

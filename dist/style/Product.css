@@ -1,11 +1,104 @@
-.product {
+#product {
+    
     display:flex;
-    flex-direction:column;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-top:10vh;
+    width:100vw;
     
 }
 
+.productBody {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    width:fit-content;
+    
+    
+    
+}
+
+#productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    width:20vw;
+    
+
+    
+}
+
+#productInfo h2 {
+    border-style:solid;
+    border-radius:6px;
+    padding:5%;
+    background-color:rgb(255, 255, 255);
+    border-color: rgb(160, 110, 44);
+    border-width:3px;
+    margin:0px;
+}
+
+#titleDiv {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+    height: fit-content;
+}
+
+
+#imgGroup {
+    
+    display:flex;
+    flex-direction: column;
+    
+    border-style:double;
+    border-color:black;
+    border-width:12px;
+    border-radius: 5px;
+}
+.smallerImgs {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom-style:double;
+    border-color:black;
+    border-width:12px;
+    border-radius: 5px;
+}
+
+.smallerImgs img {
+    width:20vw;
+    max-width:410px;
+    aspect-ratio: 4/3;
+}
+
+#bigImg {
+    /*border-style:groove;
+    border-color:rgb(128, 0, 0) green blue rgb(212, 79, 235);
+    border-width:20px;*/
+    
+    width:40vw;
+    max-width:820px;
+    aspect-ratio: 21/9.5;
+}
+
+.product h2 {
+    width:70vw;
+    
+}
+
+.product button {
+    width:5vw;
+    height:2vw;
+    max-height:40px;
+    border-radius:5px;
+    font-size:.8vw;
+}
 .cartElem {
     display:flex;
     align-items:center;
@@ -19,80 +112,133 @@
 
 .cartElem img{
     width:2vw;
+    min-width:40px;
 }
 
-.product h2 {
-    width:70vw;
-}
 
-.product button {
-    width:5vw;
-    height:2vw;
-    max-height:40px;
-    border-radius:5px;
-    font-size:.8vw;
-}
 
-#title {
+#productTitle {
     font-family: copper;
     color:rgb(160, 110, 44);
     text-shadow: 2px 1px 1px rgb(0, 0, 0);
-    
+    margin-top:0px;
 }
 
-.productImages {
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    border-style:double;
-    border-color:black;
-    border-width:12px;
-    border-radius: 5px;
+#mobileTitle {
+    display:none;
 }
 
-.productImages img {
-    width:35vw;
-    max-width:700px;
-    aspect-ratio: 4/3;
+.cartElem button{
+    min-width:100px;
+    font-size:100%;
+    aspect-ratio: 16/9;
+    background-color:rgb(146, 255, 95);
+    width:5vw;
+    max-width:120px;
+    border-radius: 10px;
 }
 
-#bigImg {
-    border-style:groove;
-    border-color:rgb(128, 0, 0) green blue rgb(212, 79, 235);
-    border-width:20px;
-    width:50vw;
-    max-width:1000px;
-    aspect-ratio: 21/9.5;
-}
 
 #tooLarge{
-    visibility:hidden;
+    display:none;
 }
 
 #tooSmall{
-    visibility:hidden;
+    display:none;
 }
 
 input {
     text-align: center;
 }
 
+.cartElem button:hover {
+    animation: logo-scale infinite .5s alternate-reverse;
+    cursor: pointer;
+    
+  }
+
+  .cartElem img:hover {
+    cursor: pointer;
+  }
+
 @media only screen and (max-aspect-ratio:.8) and (max-width:2200px){
+
+    #product {
+        margin-top: 7vh;
+    }
+    .productBody {
+        margin-top:0px;
+        flex-direction: column;
+        
+    }
+    
+
+    #productTitle {
+        font-family: copper;
+        color:rgb(160, 110, 44);
+        text-shadow: 2px 1px 1px rgb(0, 0, 0);
+        visibility:hidden;
+        
+    }
+    
+    #mobileTitle {
+        display:block;
+        font-family: copper;
+        color:rgb(160, 110, 44);
+        text-shadow: 2px 1px 1px rgb(0, 0, 0);
+        
+    }
+
+    #titleDiv {
+        width:75vw;
+        margin-bottom:5vh;
+    }
+    #productInfo {
+        width:50vw;
+    }
     img[name="left"] {
         min-width:30px;
+        width:20vw;
     }
 
     img[name="right"] {
         min-width:30px;
+        width:20vw;
     }
     #quantity {
-        width:30px;
-        height:20px;
+        min-width:30px;
+        min-height:20px;
+        width:10vw;
+        height:10vh
     }
 
     .cartElem button{
         min-width:60px;
         min-height:30px;
-        font-size:70%;
+        font-size:100%;
+        aspect-ratio: 16/9;
+        background-color:rgb(146, 255, 95);
+        width:20vw;
+        border-radius: 10px;
     }
 
+    #imgGroup {
+        width: 80vw;
+    }
+
+    .smallerImgs {
+        width:80vw;
+        padding:0px;
+        display:flex;
+        
+    }
+
+    .smallerImgs img{
+        width:50%;
+        
+    }
+    
+    #bigImg {
+        width:100%;
+    }
 }
