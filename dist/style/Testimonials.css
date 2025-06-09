@@ -7,12 +7,12 @@
     height:91.9vh;
     width:100vw;
     /*background-image: linear-gradient(rgb(252, 234, 155), rgb(255, 255, 255));*/
-    background: linear-gradient(180deg, rgb(239, 231, 69) 14%, rgba(255,255,255,1) 75%);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 14%, rgba(255,255,255,1) 75%);
 }
 
 #testimonialTitle{
     font-family: copper;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     margin-bottom: 5vh;
     
     
