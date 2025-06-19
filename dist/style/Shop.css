@@ -37,7 +37,7 @@
     }
     #main h1{
         font-size:5vw;
-        
+        text-align: center;
     }
     #cards {
         display:grid;

@@ -88,20 +88,24 @@
   @media only screen and (max-aspect-ratio:.6), (max-width:1200px){
     #shell {
       height:max-content;
-      
+      width:100vw;
     }
     #mainHome {
       gap:1vh;
+      max-width:100vw;
     }
     #homeTitle {
       font-size:6.5vw;
     }
-    #bannerImg {
-      width:90vw;
+    
+    #imgBanner {
+      width: 100vw;
+      align-items: center;
+      justify-content: center;
     }
     #mainImg {
-      width:90vw; 
-      aspect-Ratio:16/9;
+      width:98%; 
+      aspect-Ratio:4/3;
       max-width: none;
       border-radius:5px;
     }
@@ -113,11 +117,11 @@
     #leftBird{
       width:20vw; 
       transform:scaleX(-1);
-      visibility:hidden;
+      display:none;
     }
     #rightBird{
       width:20vw; 
-      visibility: hidden;
+      display:none;
     }
 
     #contactDiv {
