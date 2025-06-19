@@ -20,13 +20,13 @@
 }
 
 
-/*For when screen is large enough to accomodate bigger font*/
+/*For when screen is large enough to accomodate bigger font
 @media only screen and (min-width:1920px){
     .card h2{
         font-size:200%;
     }
 }
-/*For mobile devices*/
+For mobile devices
 @media only screen and (max-aspect-ratio:.8) and (max-width:2200px){
 
     #cards {

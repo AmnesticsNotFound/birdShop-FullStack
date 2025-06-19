@@ -31,35 +31,44 @@
 }
 
 
-@media only screen and (max-aspect-ratio:.8) and (max-width:2200px){
-
+@media only screen and (max-aspect-ratio:.6), (max-width:1200px){
     #main {
-        min-width:300px;
+        height:fit-content;
+    }
+    #main h1{
+        font-size:5vw;
         
     }
     #cards {
         display:grid;
-        grid-template-columns: repeat(1, 1fr);
-        
+        grid-template-columns: repeat(1, 100%);
         width:100%;
+        height:fit-content;
+        
     }
     .card {
         font-size: 2vw;
-        padding:1vh;
-        width:90%;
-    
+        
+        width:100%;
+        
     }
     .card h2, .card h3 { 
         font-size:300%;
     }
+    .card a {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .card img {
         aspect-ratio:4/3;
-        width:100%;
-        min-width:100px;
-        max-width:800px;
-        height:80%;
-        min-height:100px;
-        max-height:600px;
+        width:90vw;
+        min-width:0;
+        max-width:none;
+        border: .7vw solid rgb(0, 17, 85);
+        border-radius: 20px;
+        
+        
         
     }
 

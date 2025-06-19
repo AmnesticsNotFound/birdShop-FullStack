@@ -1,9 +1,10 @@
 #faqBody {
-    width:80vw;
+    width:95vw;
     margin-left:3vw;
     flex-direction: column;
     height:fit-content;
     color:rgb(0, 0, 0);
+    font-size: 3vw;
 }
 
 #hard2read {

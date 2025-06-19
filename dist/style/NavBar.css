@@ -41,6 +41,7 @@ a:link {
     display:flex;
     align-items: center;
     gap:1vw;
+    
   }
   @keyframes logo-spin {
     from {
@@ -63,14 +64,14 @@ a:link {
   }
 
 
-    #shopLink:hover {
+    .shopLink:hover {
       animation: logo-scale infinite .5s alternate-reverse;
       
     }
   
-  #shopLink {
+  .shopLink {
       aspect-ratio:32/9;
-      width:5vh;
+      width:fit-content;
       max-width:100px;
       min-width:50px;
       font-size:110%;
@@ -82,9 +83,10 @@ a:link {
   }
   
 #logo {
-    width:20vh;
+    width:30vw;
     height:8vh;
     min-width:200px;
+    max-width:300px;
     min-height:100px;
    
     
@@ -113,12 +115,42 @@ a:link {
     
 }
 
-@media only screen and (max-aspect-ratio:.8) and (max-width:2200px){
+@media only screen and (max-aspect-ratio:.6), (max-width:1200px){
   .navBar {
-    background-color: rgb(0, 17, 85);
-    height:10vh;
-    width:100vw;
+    justify-content:initial;
     overflow-x:scroll;
+    
+  }
+
+  #leftSection {
+    width:fit-content;
+  }
+
+  
+   #logo{
+    width:40vw;
+    max-width: none;
+  }
+  .shopLink {
+    max-width: none;
+    width:12vw;
+    aspect-ratio: 5/4;
+    font-size: 3vw;
+    align-content: center;
+    
+}
+
+  #cartImg {
+    width:8vw;
+    max-width: none;
+  }
+  .cartCount {
+    border-radius: 150px;
+    font-size:4vw;
+    width:5vw;
+    height: auto;
+    aspect-ratio: 1;
+   
     
   }
 }

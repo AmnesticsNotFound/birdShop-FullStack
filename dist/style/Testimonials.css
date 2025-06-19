@@ -121,33 +121,16 @@ form input[type=submit]{
     min-width:20px;
 }
 
-@media only screen and (max-aspect-ratio:.8) and (max-width:2200px){
+@media only screen and (max-aspect-ratio:.6), (max-width:1200px){
     #reviewBody {
         height:max-content;
         background-image: none;
-        
-    #createRev {
-        width:96vw;
-        order:1;
-        max-width: 100%;
-        min-width:300px;
-        margin:0px;
-        padding:0px;
     }
 
-    form {
-        width:100%;
+    #testimonialTitle {
+    font-size: 5vw;
     }
 
-    textarea {
-        font-size:200%;
-    }
-
-    input[type=text] {
-        width:30%;
-   
-    
-    }
     #reviews {
         display:flex;
         flex-direction: column-reverse;
@@ -157,32 +140,79 @@ form input[type=submit]{
         gap:1%;
         width:100%
     }
-    .reviewDiv {
-        display:flex;
-        flex-direction:column;
-        width:90%;
-        max-width:90vw;
-        font-size: 120%;
-        overflow:scroll;
-        
+    
+    #createRev {
+        width:96vw;
+        order:1;
+        max-width: 100%;
+        min-width:300px;
+        margin:0px;
+        padding:0px;
     }
 
-     .star {
-        width:10vw;
-        max-width:50px;
-        min-width:20px;
+    #createRev h1 {
+        font-size:4vw;
     }
 
-    .reviewDiv p {
-        font-size:150%;
+    form {
+        width:100%;
+    }
+
+    textarea {
+        font-size:5vw;
+    }
+
+    input[type=text] {
+        width:35%;
+        aspect-ratio: 32/9;
+        font-size: 5vw;
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 10px;
+   
+    
+    }
+    
+    #submitButton {
+        width:15%;
+        font-size: 3vw;
     }
 
     .newRevStars {
         aspect-ratio: 1;
-        width:10vw;
-        max-width:50px;
-        min-width:20px;
+        width:7vw;
+        max-width:none;
+        min-width:0;
     }
+
+    .reviewDiv {
+        display:flex;
+        flex-direction:column;
+        width:90%;
+        max-width:none;
+        font-size: 120%;
+        justify-content: center;
+        
+        
+    }
+    .reviewDiv p {
+        font-size:5vw;
+    }
+
+    .reviewDiv h1 {
+        font-size:5vw;
+    }
+
+
+    
+     .star {
+        width:7vw;
+        max-width:none;
+        min-width:0;
+    }
+
+    
+    
     
 }
 
